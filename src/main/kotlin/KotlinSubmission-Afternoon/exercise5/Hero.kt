@@ -28,46 +28,52 @@ class Hero {
         }
     }
 
-    fun jalan() {
-        val repeat = 1
-        checkHealth()
-        println("$name sedang berjalan $repeat kali")
-        health -= 1
+    fun jalan(repeat: Int){
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang berjalan $i kali")
+            health -= 1
+        }
     }
 
-    fun lari() {
-        val repeat = 3
-        checkHealth()
-        println("$name sedang berlari $repeat kali")
-        health -= 2
+    fun lari(repeat: Int) {
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang berlari $i kali")
+            health -= 2
+        }
     }
 
-    fun makan() {
-        val repeat = 2
-        checkHealth()
-        println("$name sedang makan $repeat kali")
-        health += 2
+    fun makan(repeat: Int) {
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang makan $i kali")
+            health += 2
+        }
     }
 
-    fun minum() {
-        val repeat = 5
-        checkHealth()
-        println("$name sedang minum $repeat kali")
-        health += 2
+    fun minum(repeat: Int) {
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang minum $i kali")
+            health += 2
+        }
     }
 
-    fun lompat() {
-        val repeat = 4
-        checkHealth()
-        println("$name sedang lompat $repeat kali")
-        health -= 2
+    fun lompat(repeat: Int) {
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang lompat $i kali")
+            health -= 2
+        }
     }
 
-    fun duduk() {
-        val repeat = 1
-        checkHealth()
-        println("$name sedang duduk $repeat kali")
-        health += 1
+    fun duduk(repeat: Int) {
+        for (i in 1..repeat) {
+            checkHealth()
+            println("$name sedang duduk $i kali")
+            health += 1
+        }
     }
 
 

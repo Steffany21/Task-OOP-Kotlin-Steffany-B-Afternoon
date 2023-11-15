@@ -59,18 +59,17 @@ fun main() {
     Vortex -> jalan 2x, lari 1x, makan 2x, minum 1x, lompat 2x, duduk 4x
 
     **/
-
     /**
      * Latihan 4
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-    hero.jalan()
-    hero.lari()
-    hero.makan()
-    hero.minum()
-    hero.lompat()
-    hero.duduk()
+    hero.jalan(1)
+    hero.lari(3)
+    hero.makan(2)
+    hero.minum(5)
+    hero.lompat(4)
+    hero.duduk(1)
 
 
     /**
@@ -80,5 +79,5 @@ fun main() {
      */
     hero.profile()
 
-
 }
+
