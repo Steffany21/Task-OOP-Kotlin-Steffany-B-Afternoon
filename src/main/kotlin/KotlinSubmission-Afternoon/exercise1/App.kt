@@ -10,6 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val namDepan: String = "Steffany"
+    val namaBelakang: String = "Wu"
+    val umur: Int = 20
+    val status: Boolean = true
+
+    println("nama depan : $namDepan")
+    println("nama belakang : $namaBelakang")
+    println("umur : $umur")
+    println("status : $status")
 
 }
 
@@ -19,7 +28,11 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    println("group id : $groupId")
+    println("group member : $groupMember")
+    println("session : $session")
+
+    return "$groupId, $groupMember, $session"
 }
 
 /**
@@ -29,8 +42,8 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val unlimitedInnovation = listOf("Ardini", "Rizky", "Yoga", "Afif","Steffany", "Irfan", "Dedi", "Alif", "Alan", "Rafi")
+    return listOf(unlimitedInnovation[4])
 }
 
 /**
@@ -41,10 +54,11 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val totalmentor = arrayOf<String>("kak jovian", "kak iman")
+    val countOfGroup = arrayOf<String>("Ardini", "Rizky", "Yoga", "Afif","Steffany", "Irfan", "Dedi", "Alif", "Alan", "Rafi")
 
-    return 0
+    val totalSemua = totalmentor.count() + countOfGroup.count()
+    return totalSemua
 }
 
 fun main() {
@@ -62,6 +76,9 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    val gorupId = "Unlimited Innovation"
+    val groupMember = listOf("Ardini", "Rizky", "Yoga", "Afif","Steffany", "Irfan", "Dedi", "Alif", "Alan", "Rafi")
+    val session = "Afternoon"
+    groupDetail(gorupId, groupMember, session)
 
 }

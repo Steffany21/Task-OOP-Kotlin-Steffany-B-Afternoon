@@ -29,9 +29,45 @@ class Hero {
     }
 
     fun jalan() {
+        val repeat = 1
         checkHealth()
-        println("$name sedang berjalan...")
+        println("$name sedang berjalan $repeat kali")
         health -= 1
+    }
+
+    fun lari() {
+        val repeat = 3
+        checkHealth()
+        println("$name sedang berlari $repeat kali")
+        health -= 2
+    }
+
+    fun makan() {
+        val repeat = 2
+        checkHealth()
+        println("$name sedang makan $repeat kali")
+        health += 2
+    }
+
+    fun minum() {
+        val repeat = 5
+        checkHealth()
+        println("$name sedang minum $repeat kali")
+        health += 2
+    }
+
+    fun lompat() {
+        val repeat = 4
+        checkHealth()
+        println("$name sedang lompat $repeat kali")
+        health -= 2
+    }
+
+    fun duduk() {
+        val repeat = 1
+        checkHealth()
+        println("$name sedang duduk $repeat kali")
+        health += 1
     }
 
 
